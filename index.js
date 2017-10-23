@@ -56,6 +56,10 @@ function savepost(id, title, date) {
             console.log(newposts);
         }
     });
+
+    $("#title" + id).prop('readonly', true);
+    $("#date" + id).prop('readonly', true);
+
 }
 
 
