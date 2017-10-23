@@ -1,0 +1,117 @@
+body{
+    
+    font-family: 'Concert One', cursive;
+    background-image: url("image1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+H1{
+    font-size: 120px;
+}
+
+p{
+    font-size: 30px;
+}
+#record{
+    width: 26%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(18, 77, 119, 0.993);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.button1{
+    
+    background-color: #49C4D4;
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2{
+    background-color: #FFC547;
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#remove{
+    background-color: rgba(88, 0, 0, 0.801);
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 146, 146);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#edit{
+    background-color: rgb(102, 44, 0);
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 218, 55);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#f1{
+    background-color: rgba(0, 33, 63, 0.671);
+    position: relative;
+    left: 0px;
+    top: 0px; 
+}
+#show{
+    background-color: rgba(60, 188, 139, 0.726);
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    left: 600px;
+    top: -200px; 
+}
+.title1{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(0, 48, 70, 0.493);
+    color: rgb(158, 249, 255);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+#save{
+    background-color: #043000;
+    border: none;
+    border-radius: 8px;
+    color: rgb(133, 252, 103);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

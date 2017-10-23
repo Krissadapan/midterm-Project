@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>ProjectJs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|PT+Sans+Caption" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
+  <script src="index.js"></script>
+
+  <script id="template" type="x-tmpl-mustache">
+    <div id="post{{id}}">
+      <input type="text"class="title1" id="title{{id}}" value="{{title}}" readonly>
+      <button id="remove" onclick='deletepost({{id}})'>Remove </button>
+      <button id="edit" onclick='editpost({{id}})'>Edit </button>
+      <button id="save" onclick='savepost({{id}})'>Save </button>
+    </div>
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid" align="middle" id="f1">
+    <h1 class="text-muted" id="H1">
+      <FONT color="lightblue">
+        <b>Memmory</b>
+      </FONT>
+    </h1>
+    <br>
+    <div class="b01">
+      <input type="text" class="form-control" placeholder="What do you do ?" aria-label="What do you do ?" SIZE=10 id="record">
+
+      <input id="date" type="date" id="record2">
+
+
+      <button class="btn btn-primary" id="add">Add</button>
+      <br>
+      <br>
+
+
+    </div>
+
+
+  </div>
+  <br>
+  <br>
+  <div class="container" align="middle">
+
+    <div id="showinfo">
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
