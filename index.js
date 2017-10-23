@@ -14,6 +14,7 @@ function deletepost(id) {
 function editpost(id) {
     //alert('edit ' + id);
     $("#title" + id).prop('readonly', false);
+    $("#date" + id).prop('readonly', false);
     $.ajax({
         type: 'PUT',
         //data: {name: 'Billy Bob', age: 28},
@@ -25,9 +26,10 @@ function editpost(id) {
     });
 }
 
-function savepost(id, title) {
+function savepost(id, title, date) {
     // console.log(id,title);
     var title = title;
+    var date = date;
     //var title = title;
 
     //console.log(text);
@@ -35,6 +37,7 @@ function savepost(id, title) {
 
     newposts.id = id;
     newposts.title = $("#title" + id).val();
+    newposts.date = $("#date" + id).val();
 
     //newposts.title = text;
 
@@ -67,11 +70,13 @@ $(function () {
         var newposts = {};
         newposts.id = null;
         newposts.title = $("#record").val();
+        newposts.date = $("#date").val();
 
         var url = "http://localhost:3000/posts";
         $.post(url, newposts, function (data, status) {
             console.log("Inserted " + data);
             $("#record").val("");
+            $("#date").val("");
 
         });
 

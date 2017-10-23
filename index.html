@@ -20,7 +20,8 @@
 
   <script id="template" type="x-tmpl-mustache">
     <div id="post{{id}}">
-      <input type="text"class="title1" id="title{{id}}" value="{{title}}" readonly>
+      <input type="text" class="title1" id="title{{id}}" value="{{title}}" readonly>
+      <input type="date" class="title2" id="date{{id}}" value="{{date}}" readonly>
       <button id="remove" onclick='deletepost({{id}})'>Remove </button>
       <button id="edit" onclick='editpost({{id}})'>Edit </button>
       <button id="save" onclick='savepost({{id}})'>Save </button>
@@ -40,8 +41,11 @@
     <br>
     <div class="b01">
       <input type="text" class="form-control" placeholder="What do you do ?" aria-label="What do you do ?" SIZE=10 id="record">
+      
 
-      <input id="date" type="date" id="record2">
+      <input id="date" type="date" id="date">
+
+      
 
 
       <button class="btn btn-primary" id="add">Add</button>
